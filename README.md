@@ -161,11 +161,11 @@ flutter run -d macos
 
 ### Home Screen
 
-![Home Screen](screenshots/home.png)
+![Home Screen](screenshots/home.jpg)
 
 ### Search Screen
 
-![Search](screenshots/search.png)
+![Search](screenshots/search.jpg)
 
 ## Development History
 
