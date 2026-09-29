@@ -1,84 +1,69 @@
-# Weather Application
+# ⛅ Weather Application (Student Practical Project)
 
-A Flutter weather application that displays current weather conditions, a multi-day forecast, and additional weather information in a clean and visual interface.
+A Flutter mobile application that displays current weather conditions, a multi-day forecast, and location-based weather metrics in a clean, visual interface. 
 
-The project was originally developed as a mobile application and later restored and updated to work with a modern Flutter and Dart environment.
+This repository was created as an **academic/course practical project** to practice cross-platform development, state management, local database integration, and REST API handling. It was originally developed during mobile development training and later modernized to run smoothly with the latest Flutter and Dart SDKs.
 
-## Overview
+---
 
-The application allows users to view weather information for a selected location, including temperature, weather conditions, humidity, wind speed, visibility, and sunrise/sunset times.
+## 🎯 Learning Objectives & Key Concepts
 
-It also includes location search and favorite locations stored locally on the device.
+Through this student project, the following core software engineering concepts were put into practice:
+- **Clean Architecture Principles:** Separation of concerns between UI components, state management, and data layers (`domain/` vs `ui/`).
+- **State Management:** Utilizing `Provider` for reactive application state updates.
+- **Local Data Persistence:** Using `Hive` and `Shared Preferences` for caching user preferences and favorite cities.
+- **API Handling & Demo Mode:** Working with JSON parsing, environment configuration, and graceful degradation via local JSON fallback.
 
-The original version of the project used the OpenWeather API. Since the original OpenWeather One Call 2.5 endpoint was discontinued, the repository now includes a Demo Mode with bundled weather data so the application can be launched without requiring access to a paid or legacy API.
+---
 
-## Features
+## 🚀 Overview & Features
 
-- Current weather conditions
-- Current temperature
-- Minimum and maximum temperature
-- Multi-day weather forecast
-- Weather condition icons
-- Wind speed
-- Humidity
-- Visibility
-- Sunrise and sunset information
-- Location search
-- Favorite locations
-- Local data persistence
-- Dynamic weather backgrounds
-- Demo mode with bundled weather data
-- Optional OpenWeather API integration
+The application allows users to search for weather information across different locations, save favorite cities, and view detailed metrics (temperature, humidity, wind speed, visibility, sunrise/sunset).
 
-## Technologies
+### Key Features
+- Current weather conditions and multi-day forecast
+- Temperature ranges (Min / Max) with visual icons
+- Wind speed, humidity, and visibility metrics
+- Location search with local persistence for favorite cities
+- Dynamic weather backgrounds matching current conditions
+- **Demo Mode** with bundled local JSON data (for instant offline testing)
+- Optional live OpenWeather API integration via `.env` configuration
 
-The project is built with:
+---
 
-- Flutter
-- Dart
-- Provider for state management
-- Hive for local storage
-- Shared Preferences
-- flutter_svg
-- flutter_dotenv
-- OpenWeather API
-- JSON serialization and parsing
+## 🛠️ Technologies Used
 
-## Project Structure
+- **Framework & Language:** Flutter, Dart
+- **State Management:** Provider
+- **Local Storage:** Hive, Shared Preferences
+- **Utilities & Design:** `flutter_svg`, `flutter_dotenv`, custom UI theme
+- **Networking & Data:** REST API integration, JSON serialization/parsing
+
+---
+
+## 📂 Project Structure
 
 ```text
 lib/
-├── domain/
-│   ├── api/
-│   ├── hive/
-│   ├── json_convertors/
-│   └── provider/
+├── domain/            # Business logic and data handling
+│   ├── api/           # API interaction & network logic
+│   ├── hive/          # Local database storage
+│   ├── json_convertors/ # Model classes for JSON parsing
+│   └── provider/      # Application state management
 │
-└── ui/
-    ├── components/
-    ├── constants/
-    ├── pages/
-    ├── resources/
-    ├── routes/
-    └── ui_theme/
+└── ui/                # User Interface layer
+    ├── components/    # Reusable UI widgets
+    ├── constants/     # App-wide constants
+    ├── pages/         # Screen layouts
+    ├── resources/     # Visual resources & assets
+    ├── routes/        # App navigation
+    └── ui_theme/      # Colors, typography, and styling
 
 assets/
-├── demo/
-├── fonts/
-├── icons/
-└── images/
-```
-
-The project separates data handling and business logic from the user interface.
-
-- `domain/api` contains API and weather data loading logic.
-- `domain/json_convertors` contains models used to convert JSON responses into Dart objects.
-- `domain/provider` contains application state and weather-related logic.
-- `domain/hive` handles local storage.
-- `ui/components` contains reusable UI components.
-- `ui/pages` contains application screens.
-- `ui/routes` contains navigation logic.
-- `ui/ui_theme` contains application colors and styles.
+├── demo/              # Bundled JSON data for offline Demo Mode
+├── fonts/             # Custom fonts
+├── icons/             # Weather & navigation icons
+└── images/            # Backgrounds and graphic assets
 
 ## Demo Mode
 
@@ -210,4 +195,10 @@ Possible future improvements include:
 
 ## Author
 
-Developed as a Flutter weather application project.
+Nigina Suvanova
+
+Software Engineering Student at IT Park University (ITPU)
+
+GitHub: @stajl7
+
+Primary Project Context: Mobile Application Development Practical Assignment (ProWeb / ITPU)
