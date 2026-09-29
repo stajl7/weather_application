@@ -161,15 +161,11 @@ flutter run -d macos
 
 ### Home Screen
 
-_Add screenshot here_
+![Home Screen](screenshots/home.png)
 
-### Weather Forecast
+### Search Screen
 
-_Add screenshot here_
-
-### Location Search
-
-_Add screenshot here_
+![Search](screenshots/search.png)
 
 ## Development History
 
